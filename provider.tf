@@ -1,24 +1,24 @@
 provider "azurerm" {
   version = "~>2.0"
 
-  subscription_id = var.subscription_id
-  client_id       = var.client_id
-  client_secret   = var.client_secret
-  tenant_id       = var.tenant_id
+  subscription_id = var.AZURE_SUBSCRIPTION_ID
+  client_id       = var.AZURE_CLIENT_ID
+  client_secret   = var.AZURE_CLIENT_SECRET
+  tenant_id       = var.AZURE_TENANT_ID
 }
 
-variable "subscription_id" {
+variable "AZURE_SUBSCRIPTION_ID" {
   description = "Azure subscription ID"
 }
 
-variable "client_id" {
+variable "AZURE_CLIENT_ID" {
   description = "Azure service principal client ID"
 }
 
-variable "client_secret" {
+variable "AZURE_CLIENT_SECRET" {
   description = "Azure service principal client secret"
 }
 
-variable "tenant_id" {
+variable "AZURE_TENANT_ID" {
   description = "Azure Active Directory tenant ID"
 }
